@@ -2,7 +2,7 @@ import _ from "lodash";
 import React, { Component } from 'react';
 import { connect } from "react-redux";
 import { fetchPosts } from "../actions";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 class PostsIndex extends Component {
   componentDidMount() {
