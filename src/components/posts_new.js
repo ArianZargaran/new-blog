@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Field, reduxForm } from "redux-form"
+import { Field, reduxForm } from "redux-form";
 
 class PostsNew extends Component {
   renderField(field){
@@ -11,7 +11,7 @@ class PostsNew extends Component {
           type="text"
           {...field.input}
         />
-        {field.meta.err}
+        {field.meta.error()}
       </div>
     );
   }
