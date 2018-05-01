@@ -5,23 +5,21 @@ import store from "./store.js";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 import PostsIndex from "./components/posts_index";
-import PostsNew from './components/posts_new';
-
-import registerServiceWorker from "./registerServiceWorker";
-
+import PostsShow from "./components/posts_show";
+import PostsNew from "./components/posts_new";
+import "./styles/index.css";
 
 ReactDOM.render(
   <Provider store={store}>
     <BrowserRouter>
-      <div>
+      <div className="container">
         <Switch>
-          <Route path='/posts/new' component={PostsNew} />
-          <Route path='/' component={PostsIndex} />
+          <Route path="/posts/new" component={PostsNew} />
+          <Route path="/posts/:id" component={PostsShow} />
+          <Route path="/" component={PostsIndex} />
         </Switch>
       </div>
     </BrowserRouter>
   </Provider>,
   document.getElementById("root")
 );
-
-registerServiceWorker();
