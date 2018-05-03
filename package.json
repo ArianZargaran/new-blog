@@ -4,6 +4,9 @@
   "description": "",
   "keywords": [],
   "main": "src/index.js",
+  "engines": {
+    "node": "6.11.2"
+  },
   "dependencies": {
     "axios": "0.18.0",
     "react": "16.3.2",
