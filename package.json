@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "axios": "0.18.0",
+    "lodash": "^4.17.10",
     "react": "16.3.2",
     "react-dom": "16.3.2",
     "react-redux": "5.0.7",
@@ -18,12 +19,25 @@
     "redux-form": "7.3.0",
     "redux-promise": "0.5.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.1.2"
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "postinstall": "webpack -p"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ArianZargaran/new-blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ArianZargaran/new-blog/issues"
+  },
+  "homepage": "https://github.com/ArianZargaran/new-blog#readme"
 }
